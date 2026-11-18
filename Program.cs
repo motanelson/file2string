@@ -15,6 +15,7 @@ class fileconsverter
         {
 
             s=File.ReadAllText(argv[0]);
+            s = s.Replace("\\", "\\\\");
             s = s.Replace("\"","\\\"");
             s = s.Replace("\n", "\\n");
             s = s.Replace("\r", "\\r");
